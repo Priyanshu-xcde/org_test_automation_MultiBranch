@@ -1,0 +1,12 @@
+pipelines:
+  - name: MB-G-7336
+    steps:
+      - name: MB-G-7336_trigger
+        type: Bash
+        execution:
+          onExecute:
+            - printenv
+            - echo "Executing step on ${steplet_id}"
+            - curl https://sabnzbd.org/tests/internetspeed/20MB.bin --insecure -o sample.bin
+            - add_run_files ./sample.bin sample
+            - add_pipeline_files ./sample.bin sample
