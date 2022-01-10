@@ -1,7 +1,7 @@
 pipelines:
-  - name: MB-G-7336
+  - name: MB_G_7336
     steps:
-      - name: MB-G-7336_trigger_6
+      - name: MB_G_7336_trigger_6
         type: Bash
         execution:
           onExecute:
