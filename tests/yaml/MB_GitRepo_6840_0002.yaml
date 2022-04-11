@@ -1,0 +1,8 @@
+resources:
+  - name: MB_GitRepo_6840_0002
+    type: GitRepo
+    configuration:
+      gitProvider: s_gitHub
+      path: Asaf-Federman/org_test_automation_MultiBranch
+      branches:
+        exclude: .*(([a-z])+.)+[A-Z]([a-z])+$
